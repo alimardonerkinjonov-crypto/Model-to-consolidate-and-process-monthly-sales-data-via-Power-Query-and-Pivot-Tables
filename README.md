@@ -1,22 +1,25 @@
 # Superstore Sales Data Pipeline & Executive Dashboard
 
-## Project Overview
-This project demonstrates an automated, end-to-end data pipeline designed to eliminate manual data aggregation tasks. Built entirely within Microsoft Excel using **Power Query (M Language)** and **Advanced Pivot Tables**, the model dynamically extracts data from fragmented monthly sales files, executes automated data-cleaning steps, and structures a centralized master table to power an interactive analytics dashboard.
+## Overview
+An automated, end-to-end data pipeline and interactive executive dashboard built entirely within Microsoft Excel. The solution eliminates manual data aggregation by leveraging Power Query (M Language) to dynamically extract, clean, and consolidate fragmented monthly sales files into a centralized master dataset — powering a fully interactive analytics dashboard.
 
-## Key Features & Technical Workflow
+---
+
+## Technical Workflow
 
 ### 1. Automated ETL Ingestion (Power Query)
-* **Extraction**: Automatically scans a designated file directory to identify and ingest separate monthly Superstore data payloads.
-* **Transformation & Schema Standardization**: Normalizes disparate column structures, enforces correct data types (Dates, Currency, Text), and cleans up formatting inconsistencies.
-* **Time-Series Enrichment**: Programmatically derives and injects granular time dimensions (**Month** and **Year** columns) from the raw dates to support robust historical trend filtering.
-* **Consolidation**: Stacks and appends all monthly transactional files into a single, highly optimized master dataset.
+- **Extraction:** Automatically scans a designated directory to identify and ingest separate monthly Superstore data payloads
+- **Transformation:** Normalizes disparate column structures, enforces correct data types (Dates, Currency, Text), and resolves formatting inconsistencies
+- **Time-Series Enrichment:** Programmatically derives Month and Year dimensions from raw date fields to support granular historical filtering
+- **Consolidation:** Appends all monthly transactional files into a single optimized master dataset
 
-### 2. Multi-Dimensional Data Analysis (Pivot Tables)
-* Engineered a collection of structural **Pivot Tables** to segregate and cross-examine performance across multiple business dimensions, including regional performance, temporal trends, and category performance.
+### 2. Multi-Dimensional Analysis (Pivot Tables)
+- Engineered structured Pivot Tables to cross-examine performance across regional, temporal, and category dimensions
 
 ### 3. Interactive Executive Dashboard
-* Consolidated core business metrics into a central **Dashboard** tab.
-* Coupled custom **Pivot Charts** with dynamic user-interactive **Slicers** to allow stakeholders to drill down into year-over-year growth and operational insights seamlessly at a single glance.
+- Centralized core business KPIs into a single Dashboard view
+- Integrated dynamic Slicers with custom Pivot Charts to enable seamless year-over-year trend analysis and operational drill-down
+- Implemented auxiliary helper tables with dynamic lookup formulas (INDEX/MATCH, HLOOKUP, COUNTA) to render a Grand Total trend line that intelligently suppresses overlap when a single category is in focus
 
 ## Skills Demonstrated
 * **Advanced Power Query & M Language** (Data Cleaning, Columns Transformation, Table Appending)
