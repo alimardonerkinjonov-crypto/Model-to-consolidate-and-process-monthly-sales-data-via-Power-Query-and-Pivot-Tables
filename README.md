@@ -25,3 +25,5 @@ An automated, end-to-end data pipeline and interactive executive dashboard built
 * **Advanced Power Query & M Language** (Data Cleaning, Columns Transformation, Table Appending)
 * **Data Modeling & Feature Engineering** (Extracting Time Dimensions, Schema Structuring)
 * **Data Visualization & Dashboard Design** (Pivot Charts, Dynamic Slicers, UI Layout)
+* <img width="2481" height="1755" alt="Dashboard_page-0001" src="https://github.com/user-attachments/assets/de0546af-808b-4652-877b-36010db22359" />
+
